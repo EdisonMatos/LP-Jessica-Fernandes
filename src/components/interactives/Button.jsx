@@ -59,15 +59,15 @@ export default function Button({
         <MotionDivDownToUp className="w-auto">
           <button
             onClick={onClick}
-            className={`flex ${className} ${sizeFeatures} bg-buttonColor flex-row items-center justify-around transition ${color} text-labelButtons desktop1:hover:scale-110`}
+            className={`flex ${className} ${sizeFeatures} bg-buttonColor flex-row items-center justify-around transition ${color} desktop1:hover:scale-110`}
           >
             <div
               className={`flex items-center text-center ${gap} min-h-[24px]`}
             >
               {icon && <div className={`${buttonColor}`}>{icon}</div>}
               <p
-                className={`flex items-center ${textSizeClass} ${
-                  labelColor || buttonColor
+                className={`flex items-center ${textSizeClass} ${buttonColor} ${
+                  labelColor ?? ""
                 } ${textclassName}`}
               >
                 {label}
@@ -79,15 +79,15 @@ export default function Button({
         <div className="w-auto">
           <button
             onClick={onClick}
-            className={`flex ${className} ${sizeFeatures} bg-buttonColor flex-row items-center justify-around transition ${color} text-labelButtons desktop1:hover:scale-110`}
+            className={`flex ${className} ${sizeFeatures} bg-buttonColor flex-row items-center justify-around transition ${color} desktop1:hover:scale-110`}
           >
             <div
               className={`flex items-center text-center ${gap} min-h-[24px]`}
             >
               {icon && <div className={`${buttonColor}`}>{icon}</div>}
               <p
-                className={`flex items-center ${textSizeClass} ${
-                  labelColor || buttonColor
+                className={`flex items-center ${textSizeClass} ${buttonColor} ${
+                  labelColor ?? ""
                 } ${textclassName}`}
               >
                 {label}
