@@ -17,14 +17,14 @@ export default function Influencer({ appDownloadButtons }) {
       <div id="home">
         {/* mobile */}
         <div
-          className="w-full bg-center bg-repeat bg-cover font-mainFont desktop1:pt-[45px] desktop1:hidden"
-          style={{
-            backgroundImage: `url(${content.texts.hero.backgroundPerson})`,
-          }}
+          className="w-full bg-center bg-repeat bg-cover font-mainFont desktop1:pt-[45px] bg-[#12181E] desktop1:hidden"
+          // style={{
+          //   backgroundImage: `url(${content.texts.hero.backgroundPerson})`,
+          // }}
         >
           <div className="relative z-10 flex w-fu text-labelButtons bg-opacity-0 items-left">
             <div className="w-full text-secondary justify-evenly">
-              <div className="h-[100px] desktop1:h-[140px]" />
+              <div className="h-[50px] desktop1:h-[140px]" />
               <div className="flex flex-col-reverse gap-[10px] desktop1:flex-row desktop1:justify-between mx-auto w-[90%] max-w-[1215px] items-center pb-[64px] pt-[40px] desktop1:pt-[0px] desktop1:pb-[0px]">
                 <div className="flex  flex-col w-full desktop1:w-[50%] desktop1:mr-[20px]  ">
                   <MotionDivDownToUp>
