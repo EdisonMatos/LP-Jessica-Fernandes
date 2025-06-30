@@ -36,7 +36,6 @@ export default function Cta({ colorMode = "default" }) {
             titleColorSet={textClass}
             subtitleColorSet={textClass}
             miniTitleBgColor="bg-minititle"
-            miniTitleTextColor="text-darker"
           />
           <Button
             aria-label={content.texts.hero.ctaButtonAriaLabel}

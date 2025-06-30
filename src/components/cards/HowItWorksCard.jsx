@@ -27,7 +27,7 @@ export default function HowItWorksCard({
 
   const BaseContent = (
     <div className="flex flex-col items-center justify-center transition desktop1:items-start font-mainFont desktop1:hover:scale-110 h-auto">
-      <div className="bg-buttonColor mb-[32px] p-[25px] flex justify-center items-center rounded-full h-[48px] w-[48px] text-labelButtons text-title1 font-semibold">
+      <div className="bg-primary mb-[32px] p-[25px] flex justify-center items-center rounded-full h-[48px] w-[48px] text-bgSectionDark text-title1 font-semibold">
         {number}
       </div>
 
@@ -44,7 +44,7 @@ export default function HowItWorksCard({
 
   const StaticContent = (
     <div className="flex flex-col items-center justify-center tablet1:w-[45%] transition desktop1:items-start font-mainFont desktop1:hover:scale-110 h-auto">
-      <div className="bg-buttonColor mb-[32px] p-[25px] flex justify-center items-center rounded-full h-[48px] w-[48px] text-labelButtons text-title1 font-semibold">
+      <div className="bg-primary mb-[32px] p-[25px] flex justify-center items-center rounded-full h-[48px] w-[48px] text-bgSectionDark text-title1 font-semibold">
         {number}
       </div>
       <h1 className="text-[20px] text-colorWhite font-bold mb-[24px]">
@@ -53,12 +53,13 @@ export default function HowItWorksCard({
       <p className="text-[16px] text-colorWhite opacity-70 text-center desktop1:text-left w-full">
         {description}
       </p>
-
     </div>
   );
 
   return animation ? (
-    <MotionDivDownToUp className="tablet1:w-[45%]">{BaseContent}</MotionDivDownToUp>
+    <MotionDivDownToUp className="tablet1:w-[45%]">
+      {BaseContent}
+    </MotionDivDownToUp>
   ) : (
     StaticContent
   );
