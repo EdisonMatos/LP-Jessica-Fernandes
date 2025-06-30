@@ -38,6 +38,8 @@ export default function Steps({ colorMode }) {
             sectionHeaderSubtitle={content.texts.steps.subtitle}
             type="article"
             titleColorSet={titleColor}
+            miniTitleBgColor="bg-primary"
+            miniTitleTextColor=""
           />
           <SectionHeader
             className="text-center desktop1:hidden"

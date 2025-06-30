@@ -31,8 +31,8 @@ export default function AboutModal() {
             label={content.texts.about.ctaButtonText}
             animation={false}
             className="hover:scale-105 bg-buttonColor"
-            icon={<FaWhatsapp color="black" size={24} />}
-            labelColor="text-black"
+            icon={<FaWhatsapp color="white" size={24} />}
+            labelColor="text-white"
           />
         </div>
       </p>
@@ -43,13 +43,14 @@ export default function AboutModal() {
   return (
     <div>
       <Button
-        className="mt-[48px]"
+        className="mt-[48px] bg-primary "
         label={content.texts.about.buttonModalLabelAbout}
         onClick={onClick}
+        textclassName="text-darker"
         removeAnchor={true}
         removeTarget={true}
         animation={true}
-        icon={<MoveRight />}
+        icon={<MoveRight className="text-darker" />}
       />
       <Dialog
         className="font-secondFont"

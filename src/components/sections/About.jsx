@@ -116,6 +116,8 @@ export default function About({
             type="article"
             titleColorSet={titleColor}
             subtitleColorSet={subtitleColor}
+            miniTitleBgColor="bg-primary"
+              miniTitleTextColor=""
           />
           <MotionDivDownToUp>
             {modal ? (
