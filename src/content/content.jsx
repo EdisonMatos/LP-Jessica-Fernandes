@@ -127,7 +127,7 @@ const content = {
       title: (
         <h1 className="mb-[16px]">
           Direito de Família que
-          <span className="text-buttonColor"> transforma </span>vidas
+          <span className="text-[#919AA7]"> transforma </span>vidas
         </h1>
       ),
       subtitle:
