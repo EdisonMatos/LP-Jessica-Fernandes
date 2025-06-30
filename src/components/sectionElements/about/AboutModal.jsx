@@ -46,7 +46,7 @@ export default function AboutModal() {
         className="mt-[48px] bg-primary "
         label={content.texts.about.buttonModalLabelAbout}
         onClick={onClick}
-        textclassName="text-darker"
+        textclassName="text-[#000]"
         removeAnchor={true}
         removeTarget={true}
         animation={true}

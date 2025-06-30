@@ -8,7 +8,7 @@ function InstagramAbout() {
       label={content.texts.about.aboutSocial.labelInstagram}
       buttonLink={content.texts.links.instagram}
       className="bg-primary"
-      textclassName="text-darker"
+      textclassName="text-[#000]"
       icon={
         <svg
           xmlns="http://www.w3.org/2000/svg"
