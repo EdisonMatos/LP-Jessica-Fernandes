@@ -1,6 +1,6 @@
 import logo from "../assets/imgs/logo/logo.webp";
 import heroImgPhone from "../assets/imgs/hero/personImg.webp";
-import heroImgDesktop from "../assets/imgs/hero/bgHeroInfluencer.webp";
+import heroImgDesktop from "../assets/imgs/hero/bgHeroInfluencer.png";
 import bgHeroImg from "../assets/imgs/hero/bgHeroInfluencer.jpg";
 import heroDefaultImg from "../assets/imgs/hero/lawHero.jpg";
 import backgroundPersonMobile from "../assets/imgs/hero/bgHeroMobile.webp";

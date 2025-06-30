@@ -131,7 +131,7 @@ export default function Influencer({ appDownloadButtons }) {
           }}
         >
           <SectionArea paddingTopAndBottom={false} className="relative">
-            <div className="absolute inset-0 w-[65%] h-full bg-gradient-to-r from-darker to-transparent" />
+            <div className="absolute inset-0 w-[60%] h-full bg-gradient-to-r from-darker to-transparent" />
 
             <SectionWrapper>
               <div className="relative z-10 flex w-full items-left pt-[36px] desktop1:py-[90px] desktop2:pb-[90px] ">
