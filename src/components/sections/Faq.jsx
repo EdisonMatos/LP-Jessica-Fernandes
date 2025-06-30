@@ -37,7 +37,6 @@ export default function Faq({ colorMode }) {
           titleColorSet={titleColor}
           subtitleColorSet={titleColor}
           miniTitleBgColor="bg-minititle"
-          miniTitleTextColor="text-darker"
         />
         <SectionWrapper className="flex justify-center">
           <MotionDivDownToUp className="flex justify-center w-full">

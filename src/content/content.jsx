@@ -1,6 +1,6 @@
 import logo from "../assets/imgs/logo/logo.png";
 import heroImgPhone from "../assets/imgs/hero/personImg.png";
-import heroImgDesktop from "../assets/imgs/hero/bgHeroInfluencer.jpg";
+import heroImgDesktop from "../assets/imgs/hero/bgHeroInfluencer.png";
 import bgHeroImg from "../assets/imgs/hero/bgHeroInfluencer.jpg";
 import heroDefaultImg from "../assets/imgs/hero/lawHero.jpg";
 import backgroundPersonMobile from "../assets/imgs/hero/bgHeroMobile.jpg";
@@ -127,7 +127,7 @@ const content = {
       title: (
         <h1 className="mb-[16px]">
           Direito de Família que
-          <span className="text-primary"> transforma vidas</span>
+          <span className="text-buttonColor"> transforma </span>vidas
         </h1>
       ),
       subtitle:

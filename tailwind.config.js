@@ -25,10 +25,10 @@ export const theme = {
       // Botões e Links
 
       links: "#0189BB",
-      buttonColor: "#EAE5E1",
+      buttonColor: "#2E3E50",
       iconButtons: "#000",
-      labelButtons: "#000",
-      minititle: "#EAE5E1",
+      labelButtons: "#fff",
+      minititle: "#2E3E50",
 
       // Sombras
 
