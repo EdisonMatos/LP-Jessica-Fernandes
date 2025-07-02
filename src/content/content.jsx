@@ -192,7 +192,7 @@ const content = {
       card1: {
         img: featuresImg1,
         title: "Pensão",
-        subtitle: "Ações para solicitar, revisar ou cobrar pensão.",
+        subtitle: "Ações para solicitar, revisar ou executar pensão.",
         description: (
           <div>
             A_Definir
@@ -225,7 +225,8 @@ const content = {
       card2: {
         img: featuresImg2,
         title: "Guarda",
-        subtitle: "Regulação de guarda e visitas com foco no menor.",
+        subtitle:
+          "Definição de guarda e visitas com foco no bem-estar e nos direitos da criança.",
         description: (
           <div>
             A_Definir
