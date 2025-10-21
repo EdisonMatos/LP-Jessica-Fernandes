@@ -27,7 +27,7 @@ export default function Features6cards({ modal, colorMode }) {
     <>
       <SectionArea id="service" className={`${bgClass}`}>
         <SectionHeader
-          className={`text-center ${textClass}`}
+          className={`text-center bg-transparent ${textClass}`}
           miniTitle={content.texts.features.miniTag}
           sectionHeaderTitle={content.texts.features.title}
           sectionHeaderSubtitle={content.texts.features.subtitle}
@@ -86,18 +86,18 @@ export default function Features6cards({ modal, colorMode }) {
               </MotionDivDownToUp>
               <MotionDivDownToUp>
                 <IconFeatureCard
-                  icon={content.texts.features.card3.icon}
-                  title={content.texts.features.card3.title}
-                  paragraph={content.texts.features.card3.subtitle}
+                  icon={content.texts.features.card5.icon}
+                  title={content.texts.features.card5.title}
+                  paragraph={content.texts.features.card5.subtitle}
                   colorMode={colorMode}
                 />
               </MotionDivDownToUp>
 
               <MotionDivDownToUp>
                 <IconFeatureCard
-                  icon={content.texts.features.card3.icon}
-                  title={content.texts.features.card3.title}
-                  paragraph={content.texts.features.card3.subtitle}
+                  icon={content.texts.features.card6.icon}
+                  title={content.texts.features.card6.title}
+                  paragraph={content.texts.features.card6.subtitle}
                   colorMode={colorMode}
                 />
               </MotionDivDownToUp>
