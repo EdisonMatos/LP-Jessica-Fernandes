@@ -49,6 +49,8 @@ export default function Steps({ colorMode }) {
             color={colorMode ? "light" : ""}
             type={colorMode ? "" : "article"}
             colorMode={colorMode}
+            miniTitleBgColor="bg-primary"
+            miniTitleTextColor=""
           />
 
           <div className="flex flex-wrap w-full justify-between gap-[32px] mt-[28px] desktop1:mt-0">
