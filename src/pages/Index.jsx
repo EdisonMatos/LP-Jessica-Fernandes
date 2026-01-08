@@ -1,29 +1,42 @@
+import { lazy, Suspense } from 'react'
 import '../styles/shapeDivs.css'
-import Cta from '../components/sections/Cta'
-import Faq from '../components/sections/Faq'
-import Hero from '../components/sections/Hero'
-import About from '../components/sections/About'
-import Steps from '../components/sections/Steps'
-import Features from '../components/sections/Features'
+
+// CRÍTICO — render imediato (LCP)
 import Navbar from '../components/sections/NavbarSocial'
-import FooterSocial from '../components/sections/FooterSocial'
-import AboutInstagram from '../components/sections/AboutInstagram'
-import BackToTopButton from '../components/interactives/BackToTopButton'
-import FloatingWhatsappButton from '../components/interactives/FloatingWhatsappButton'
-import Maps from '../components/sections/Maps'
-import TeamCards from '../components/sections/TeamCards'
-import BlogPosts from '../components/sections/BlogPosts'
+import Hero from '../components/sections/Hero'
+
+// Lazy — abaixo da dobra
+const Features = lazy(() => import('../components/sections/Features'))
+const About = lazy(() => import('../components/sections/About'))
+const AboutInstagram = lazy(() =>
+  import('../components/sections/AboutInstagram')
+)
+const Cta = lazy(() => import('../components/sections/Cta'))
+const Steps = lazy(() => import('../components/sections/Steps'))
+const Faq = lazy(() => import('../components/sections/Faq'))
+const FooterSocial = lazy(() => import('../components/sections/FooterSocial'))
+
+const FloatingWhatsappButton = lazy(() =>
+  import('../components/interactives/FloatingWhatsappButton')
+)
+const BackToTopButton = lazy(() =>
+  import('../components/interactives/BackToTopButton')
+)
+
+// const BlogPosts = lazy(() => import('../components/sections/BlogPosts'))
+// const Maps = lazy(() => import('../components/sections/Maps'))
+// const TeamCards = lazy(() => import('../components/sections/TeamCards'))
 
 export default function Index() {
-  // Altere esta constante para: 'default', 'light' ou 'dark'
   const colorMode = 'default'
 
   return (
     <>
+      {/* Render imediato */}
       <Navbar colorMode={colorMode} />
 
       <main>
-        {' '}
+        {/* LCP — NÃO usar lazy */}
         <Hero
           colorMode={colorMode}
           appDownloadButtons={false}
@@ -31,37 +44,49 @@ export default function Index() {
           influencer={true}
           mesclado={false}
         />
-        {/* <BlogPosts /> */}
-        <Features
-          colorMode={colorMode}
-          defaultFeature={false}
-          button={false}
-          modalWithCards={false}
-          paragraphs={false}
-          sixCards={true}
-          paragraphsModal={false}
-        />
-        <About modal={true} showGallery={false} colorMode={colorMode} />
-        <AboutInstagram
-          colorMode={colorMode}
-          instagram={true}
-          socialPrint={false}
-        />
-        <Cta colorMode={colorMode} />
-        <Steps colorMode={colorMode} />
-        {/* <Maps colorMode={colorMode} /> */}
-        <Faq colorMode={colorMode} />
-        <FooterSocial
-          colorMode={colorMode}
-          addres={false}
-          addresSecundario={false}
-          phoneSecundario={false}
-          phoneTerciario={false}
-          expedientesecond={false}
-          instagram={true}
-        />
-        <FloatingWhatsappButton />
-        <BackToTopButton />
+
+        {/* Conteúdo abaixo da dobra */}
+        <Suspense fallback={null}>
+          {/* <BlogPosts /> */}
+
+          <Features
+            colorMode={colorMode}
+            defaultFeature={false}
+            button={false}
+            modalWithCards={false}
+            paragraphs={false}
+            sixCards={true}
+            paragraphsModal={false}
+          />
+
+          <About modal={true} showGallery={false} colorMode={colorMode} />
+
+          <AboutInstagram
+            colorMode={colorMode}
+            instagram={true}
+            socialPrint={false}
+          />
+
+          <Cta colorMode={colorMode} />
+          <Steps colorMode={colorMode} />
+
+          {/* <Maps colorMode={colorMode} /> */}
+
+          <Faq colorMode={colorMode} />
+
+          <FooterSocial
+            colorMode={colorMode}
+            addres={false}
+            addresSecundario={false}
+            phoneSecundario={false}
+            phoneTerciario={false}
+            expedientesecond={false}
+            instagram={true}
+          />
+
+          <FloatingWhatsappButton />
+          <BackToTopButton />
+        </Suspense>
       </main>
     </>
   )
