@@ -1,16 +1,16 @@
-import MotionDivDownToUp from "../../animation/MotionDivDownToUp";
-import MotionDivRightToLeft from "../../animation/MotionDivRightToLeft";
-import content from "../../../content/content";
-import Button from "../../interactives/Button";
-import { FaWhatsapp } from "react-icons/fa";
-import { useNavigate } from "react-router-dom";
-import { useState, useEffect } from "react";
-import "../../../styles/shapeDivs.css";
-import SectionArea from "../SectionArea";
-import SectionWrapper from "../SectionWrapper";
+import MotionDivDownToUp from '../../animation/MotionDivDownToUp'
+import MotionDivRightToLeft from '../../animation/MotionDivRightToLeft'
+import content from '../../../content/content'
+import Button from '../../interactives/Button'
+import { FaWhatsapp } from 'react-icons/fa'
+import { useNavigate } from 'react-router-dom'
+import { useState, useEffect } from 'react'
+import '../../../styles/shapeDivs.css'
+import SectionArea from '../SectionArea'
+import SectionWrapper from '../SectionWrapper'
 
 export default function Influencer({ appDownloadButtons }) {
-  const navigate = useNavigate();
+  const navigate = useNavigate()
 
   return (
     <>
@@ -73,7 +73,7 @@ export default function Influencer({ appDownloadButtons }) {
                             {content.texts.hero.app.description}
                           </p>
                           <div className="">
-                            {" "}
+                            {' '}
                             <div className="flex items-start gap-[20px]">
                               <a
                                 href={content.texts.hero.app.imgs.appStore.link}
@@ -116,6 +116,7 @@ export default function Influencer({ appDownloadButtons }) {
                       src={content.texts.hero.heroImgPhone}
                       className="h-[100%] relative desktop1:hidden"
                       alt="Foto do advogado"
+                      fetchPriority="high"
                     ></img>
                   </MotionDivRightToLeft>
                 </div>
@@ -185,7 +186,7 @@ export default function Influencer({ appDownloadButtons }) {
                                 {content.texts.hero.app.description}
                               </p>
                               <div className="">
-                                {" "}
+                                {' '}
                                 <div className="flex items-start gap-[20px]">
                                   <a
                                     href={
@@ -238,5 +239,5 @@ export default function Influencer({ appDownloadButtons }) {
         </div>
       </div>
     </>
-  );
+  )
 }
