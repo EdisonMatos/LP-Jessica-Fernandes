@@ -111,7 +111,7 @@ export default function Influencer({ appDownloadButtons }) {
                   <div className="relative flex items-end justify-center w-full desktop2:justify-end">
                     {/* <!-- LCP Mobile --> */}
                     <img
-                      src="/personImg-mobile.webp"
+                      src="/personImg.webp"
                       alt="Foto do advogado"
                       width="360"
                       height="650"
@@ -123,7 +123,7 @@ export default function Influencer({ appDownloadButtons }) {
 
                     {/* <!-- LCP Desktop --> */}
                     <img
-                      src="/personImg-desktop.webp"
+                      src="/personImg.webp"
                       alt="Foto do advogado"
                       width="467"
                       height="847"
