@@ -1,53 +1,52 @@
-import { useState, useEffect } from "react";
-import { Sidebar } from "primereact/sidebar";
-import { Button } from "primereact/button";
-import { Ripple } from "primereact/ripple";
-import "primeicons/primeicons.css";
+import { useState, useEffect } from 'react'
+import { Sidebar } from 'primereact/sidebar'
+import { Button } from 'primereact/button'
+import { Ripple } from 'primereact/ripple'
+import 'primeicons/primeicons.css'
 import {
   HelpCircle,
   HomeIcon,
   ServerIcon,
   UserSearch,
   AlignJustify,
-} from "lucide-react";
-import { Link } from "react-scroll";
-import content from "../../content/content";
-import ButtonWithIconNavbar from "../interactives/ButtonWithIconNavbar";
+} from 'lucide-react'
+import { Link } from 'react-scroll'
+import content from '../../content/content'
+import ButtonWithIconNavbar from '../interactives/ButtonWithIconNavbar'
 
 export default function SidebarSocial({ colorMode }) {
-  const [visible, setVisible] = useState(false);
-  const [submenuVisible, setSubmenuVisible] = useState(true);
-  const [reportsSubmenuVisible, setReportsSubmenuVisible] = useState(false);
-  const [revenueSubmenuVisible, setRevenueSubmenuVisible] = useState(false);
-  const [aplicationSubmenuVisible, setAplicationSubmenuVisible] =
-    useState(true);
-  const [scrolled, setScrolled] = useState(false);
+  const [visible, setVisible] = useState(false)
+  const [submenuVisible, setSubmenuVisible] = useState(true)
+  const [reportsSubmenuVisible, setReportsSubmenuVisible] = useState(false)
+  const [revenueSubmenuVisible, setRevenueSubmenuVisible] = useState(false)
+  const [aplicationSubmenuVisible, setAplicationSubmenuVisible] = useState(true)
+  const [scrolled, setScrolled] = useState(false)
 
   const toggleSidebar = () => {
-    setVisible(!visible);
-  };
+    setVisible(!visible)
+  }
 
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 0) {
-        setScrolled(true);
+        setScrolled(true)
       } else {
-        setScrolled(false);
+        setScrolled(false)
       }
-    };
+    }
 
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener('scroll', handleScroll)
 
     return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
+      window.removeEventListener('scroll', handleScroll)
+    }
+  }, [])
 
   return (
     <div className="inset-0 z-10 flex">
       <div
         className={`${
-          visible ? "block" : "hidden"
+          visible ? 'block' : 'hidden'
         } fixed inset-0 bg-darker opacity-50 lg:hidden`}
         onClick={toggleSidebar}
       />
@@ -59,9 +58,9 @@ export default function SidebarSocial({ colorMode }) {
           className={`p-button-rounded p-button-outlined lg:hidden ${
             colorMode
               ? scrolled
-                ? "text-primary"
-                : "text-primary"
-              : "text-primary"
+                ? 'text-primary'
+                : 'text-primary'
+              : 'text-primary'
           } w-[40px] h-[40px]`}
           onClick={() => setVisible(true)}
         />
@@ -77,10 +76,10 @@ export default function SidebarSocial({ colorMode }) {
               id="app-sidebar-2"
               className={`${
                 colorMode
-                  ? "bg-bgSectionDark"
-                  : "absolute top-0 left-0 flex-shrink-0 h-screen border-r-[1px] select-none bg-bgSectionDark surface-section lg:hidden lg:static z-1 surface-border border-neutral-700"
+                  ? 'bg-bgSectionDark'
+                  : 'absolute top-0 left-0 flex-shrink-0 h-screen border-r-[1px] select-none bg-bgSectionDark surface-section lg:hidden lg:static z-1 surface-border border-neutral-700'
               }`}
-              style={{ width: "280px" }}
+              style={{ width: '280px' }}
             >
               <div className="flex flex-col h-full">
                 <div className="flex items-center justify-between flex-shrink-0 px-4 pt-6 ">
@@ -101,8 +100,8 @@ export default function SidebarSocial({ colorMode }) {
                       outlined
                       className={`${
                         colorMode
-                          ? "text-primary"
-                          : "h-2rem w-2rem p-[5px] text-white"
+                          ? 'text-primary'
+                          : 'h-2rem w-2rem p-[5px] text-white'
                       }`}
                     ></Button>
                   </span>
@@ -115,8 +114,8 @@ export default function SidebarSocial({ colorMode }) {
                         <ul
                           className={`${
                             colorMode
-                              ? "text-primary"
-                              : "p-0 m-0 -mt-[16px] overflow-hidden font-medium text-white"
+                              ? 'text-primary'
+                              : 'p-0 m-0 -mt-[16px] overflow-hidden font-medium text-white'
                           } list-none text-paragraph3 font-mainFont`}
                         >
                           <li>
@@ -144,7 +143,7 @@ export default function SidebarSocial({ colorMode }) {
                                 <UserSearch />
                                 <span className="ml-[8px]">
                                   <Link
-                                    to="service"
+                                    to="services"
                                     className="align-text-top cursor-pointer"
                                     spy={true}
                                     smooth={true}
@@ -308,5 +307,5 @@ export default function SidebarSocial({ colorMode }) {
         ></Sidebar>
       </div>
     </div>
-  );
+  )
 }
