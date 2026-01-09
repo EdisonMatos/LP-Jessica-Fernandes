@@ -114,7 +114,7 @@ export default function Influencer({ appDownloadButtons }) {
                   <MotionDivRightToLeft className="relative flex items-end justify-center w-full desktop2:justify-end">
                     <img
                       src={content.texts.hero.heroImgPhone}
-                      className="h-[100%] relative desktop1:hidden"
+                      className="h-[100%] relative desktop1:hidden aspect-[4/7]"
                       alt="Foto do advogado"
                       fetchPriority="high"
                     ></img>

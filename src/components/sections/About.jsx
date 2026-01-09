@@ -1,19 +1,19 @@
-import React from "react";
-import SectionArea from "../sectionElements/SectionArea";
-import "react-image-gallery/styles/css/image-gallery.css";
-import SectionHeader from "../sectionElements/SectionHeader";
-import AboutModal from "../sectionElements/about/AboutModal";
-import content from "../../content/content";
-import SectionWrapper from "../sectionElements/SectionWrapper";
-import MotionDivDownToUp from "../animation/MotionDivDownToUp";
-import GalleryAbout from "../sectionElements/about/GalleryAbout";
-import ParagraphSemFading from "../sectionElements/about/ParagraphSemFading";
-import ParagraphWithFading from "../sectionElements/about/ParagraphWithFading";
-import ImageGallery from "react-image-gallery";
-import "react-image-gallery/styles/css/image-gallery.css";
-import img1 from "../../assets/imgs/about/imgGaleria1.webp";
-import img2 from "../../assets/imgs/about/imgGaleria2.webp";
-import img3 from "../../assets/imgs/about/imgGaleria3.webp";
+import React from 'react'
+import SectionArea from '../sectionElements/SectionArea'
+import 'react-image-gallery/styles/css/image-gallery.css'
+import SectionHeader from '../sectionElements/SectionHeader'
+import AboutModal from '../sectionElements/about/AboutModal'
+import content from '../../content/content'
+import SectionWrapper from '../sectionElements/SectionWrapper'
+import MotionDivDownToUp from '../animation/MotionDivDownToUp'
+import GalleryAbout from '../sectionElements/about/GalleryAbout'
+import ParagraphSemFading from '../sectionElements/about/ParagraphSemFading'
+import ParagraphWithFading from '../sectionElements/about/ParagraphWithFading'
+import ImageGallery from 'react-image-gallery'
+import 'react-image-gallery/styles/css/image-gallery.css'
+import img1 from '../../assets/imgs/about/imgGaleria1.webp'
+import img2 from '../../assets/imgs/about/imgGaleria2.webp'
+import img3 from '../../assets/imgs/about/imgGaleria3.webp'
 
 export default function About({
   modal = true,
@@ -22,18 +22,18 @@ export default function About({
 }) {
   // Definir classes de tema
   const bgClasses = {
-    dark: "bg-bgFixedDark",
-    light: "bg-bgFixedLight",
-    default: "bg-bgSectionDark",
-  };
+    dark: 'bg-bgFixedDark',
+    light: 'bg-bgFixedLight',
+    default: 'bg-bgSectionDark',
+  }
   const textClasses = {
-    dark: "text-white",
-    light: "text-black",
-    default: "text-white",
-  };
-  const bgClass = bgClasses[colorMode] || bgClasses.default;
-  const titleColor = textClasses[colorMode] || textClasses.default;
-  const subtitleColor = colorMode === "light" ? "text-black/80" : "text-white";
+    dark: 'text-white',
+    light: 'text-black',
+    default: 'text-white',
+  }
+  const bgClass = bgClasses[colorMode] || bgClasses.default
+  const titleColor = textClasses[colorMode] || textClasses.default
+  const subtitleColor = colorMode === 'light' ? 'text-black/80' : 'text-white'
 
   const images = [
     {
@@ -48,7 +48,7 @@ export default function About({
       original: img3,
       thumbnail: img3,
     },
-  ];
+  ]
 
   return (
     <SectionArea
@@ -60,7 +60,9 @@ export default function About({
           <img
             src={content.texts.about.imagem.img}
             alt={content.texts.about.imagem.alt}
-            className="w-[100%] desktop1:w-[415px] desktop2:w-[485px] rounded-xl shadow-custom-opacity shadow-shadowAbouts/10"
+            width={930}
+            height={930}
+            className="w-[100%] desktop1:w-[415px] desktop2:w-[485px] rounded-xl shadow-custom-opacity shadow-shadowAbouts/10 aspect-[3/3]"
           />
         </MotionDivDownToUp>
         {/* <MotionDivDownToUp className=" w-[100%] desktop1:w-[415px] desktop2:w-[485px] flex justify-center">
@@ -117,7 +119,7 @@ export default function About({
             titleColorSet={titleColor}
             subtitleColorSet={subtitleColor}
             miniTitleBgColor="bg-primary"
-              miniTitleTextColor=""
+            miniTitleTextColor=""
           />
           <MotionDivDownToUp>
             {modal ? (
@@ -130,5 +132,5 @@ export default function About({
         </div>
       </SectionWrapper>
     </SectionArea>
-  );
+  )
 }

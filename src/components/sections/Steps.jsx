@@ -1,25 +1,25 @@
-import React from "react";
-import content from "../../content/content";
-import HowItWorksCard from "../cards/HowItWorksCard";
-import SectionArea from "../sectionElements/SectionArea";
-import SectionHeader from "../sectionElements/SectionHeader";
-import SectionWrapper from "../sectionElements/SectionWrapper";
-import MotionDivDownToUp from "../animation/MotionDivDownToUp";
+import React from 'react'
+import content from '../../content/content'
+import HowItWorksCard from '../cards/HowItWorksCard'
+import SectionArea from '../sectionElements/SectionArea'
+import SectionHeader from '../sectionElements/SectionHeader'
+import SectionWrapper from '../sectionElements/SectionWrapper'
+import MotionDivDownToUp from '../animation/MotionDivDownToUp'
 
 export default function Steps({ colorMode }) {
   // Classes de tema
   const bgClasses = {
-    dark: "bg-bgFixedDark",
-    light: "bg-bgFixedLight",
-    default: "bg-bgSectionDark",
-  };
+    dark: 'bg-bgFixedDark',
+    light: 'bg-bgFixedLight',
+    default: 'bg-bgSectionDark',
+  }
   const textClasses = {
-    dark: "text-white",
-    light: "text-black",
-    default: "text-white",
-  };
-  const bgClass = bgClasses[colorMode] || bgClasses.default;
-  const titleColor = textClasses[colorMode] || textClasses.default;
+    dark: 'text-white',
+    light: 'text-black',
+    default: 'text-white',
+  }
+  const bgClass = bgClasses[colorMode] || bgClasses.default
+  const titleColor = textClasses[colorMode] || textClasses.default
   return (
     <SectionArea className={`${bgClass}`} paddingtop={true}>
       <SectionWrapper className="flex flex-col desktop1:flex-row-reverse gap-[40px] desktop2:gap-0 desktop1:justify-between">
@@ -27,7 +27,9 @@ export default function Steps({ colorMode }) {
           <img
             src={content.texts.steps.img}
             alt={content.texts.steps.img}
-            className="w-[100%] desktop1:w-[415px] desktop2:w-[485px] rounded-xl"
+            width={930}
+            height={930}
+            className="w-[100%] desktop1:w-[415px] desktop2:w-[485px] rounded-xl aspect-[3/3]"
           />
         </MotionDivDownToUp>
         <div className="desktop1:w-[550px] desktop2:w-[570px]">
@@ -46,8 +48,8 @@ export default function Steps({ colorMode }) {
             miniTitle={content.texts.steps.miniTag}
             sectionHeaderTitle={content.texts.steps.title}
             sectionHeaderSubtitle={content.texts.steps.subtitle}
-            color={colorMode ? "light" : ""}
-            type={colorMode ? "" : "article"}
+            color={colorMode ? 'light' : ''}
+            type={colorMode ? '' : 'article'}
             colorMode={colorMode}
             miniTitleBgColor="bg-primary"
             miniTitleTextColor=""
@@ -86,5 +88,5 @@ export default function Steps({ colorMode }) {
         </div>
       </SectionWrapper>
     </SectionArea>
-  );
+  )
 }
