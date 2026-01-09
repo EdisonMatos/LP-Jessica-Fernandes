@@ -109,13 +109,28 @@ export default function Influencer({ appDownloadButtons }) {
                 </div>
                 <div className="flex justify-center w-full tablet1:w-full desktop1:w-[35%] ">
                   <div className="relative flex items-end justify-center w-full desktop2:justify-end">
+                    {/* <!-- LCP Mobile --> */}
                     <img
-                      src="/personImg.webp"
+                      src="/personImg-mobile.webp"
                       alt="Foto do advogado"
+                      width="360"
+                      height="650"
                       fetchpriority="high"
+                      class="block desktop1:hidden"
+                      loading="eager"
+                      decoding="async"
+                    />
+
+                    {/* <!-- LCP Desktop --> */}
+                    <img
+                      src="/personImg-desktop.webp"
+                      alt="Foto do advogado"
                       width="467"
                       height="847"
-                      class="h-full relative desktop1:hidden"
+                      fetchpriority="high"
+                      class="hidden desktop1:block"
+                      loading="eager"
+                      decoding="async"
                     />
                   </div>
                 </div>
