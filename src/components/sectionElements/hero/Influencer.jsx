@@ -110,13 +110,13 @@ export default function Influencer({ appDownloadButtons }) {
                 <div className="flex justify-center w-full tablet1:w-full desktop1:w-[35%] ">
                   <div className="relative flex items-end justify-center w-full desktop2:justify-end">
                     <img
-                      src="./personImg.webp"
-                      className="h-[100%] relative desktop1:hidden"
+                      src="/personImg.webp"
                       alt="Foto do advogado"
-                      fetchPriority="high"
-                      width={467}
-                      height={847}
-                    ></img>
+                      fetchpriority="high"
+                      width="467"
+                      height="847"
+                      class="h-full relative desktop1:hidden"
+                    />
                   </div>
                 </div>
               </div>
