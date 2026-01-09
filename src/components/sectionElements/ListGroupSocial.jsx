@@ -58,7 +58,7 @@ export default function ListGroupSocial({ colorMode = 'default' }) {
             smooth={true}
             duration={500}
             offset={-50}
-            href={`#${ids[index]}`}
+           
           >
             <span
               className={`h-[24px] inline-block ${getHoverTextColor()} ${textShadow}`}
