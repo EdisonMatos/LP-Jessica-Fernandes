@@ -114,6 +114,8 @@ export default function Influencer({ appDownloadButtons }) {
                       className="h-[100%] relative desktop1:hidden"
                       alt="Foto do advogado"
                       fetchPriority="high"
+                      width={467}
+                      height={847}
                     ></img>
                   </div>
                 </div>
