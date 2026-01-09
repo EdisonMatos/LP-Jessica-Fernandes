@@ -54,11 +54,11 @@ export default function ListGroupSocial({ colorMode = 'default' }) {
             aria-label={`Link para ${section}`}
             to={ids[index]}
             className="relative font-semibold cursor-pointer"
-            spy={true}
+            spy={false}
             smooth={true}
             duration={500}
             offset={-50}
-           
+            href={`#${ids[index]}`}
           >
             <span
               className={`h-[24px] inline-block ${getHoverTextColor()} ${textShadow}`}
