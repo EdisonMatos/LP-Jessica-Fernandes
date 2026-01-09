@@ -1,27 +1,27 @@
-import "primeicons/primeicons.css";
-import content from "../../content/content";
-import ServicesModal from "./ServicesModal";
-import "primereact/resources/primereact.min.css";
-import IconFeatureCard from "../cards/IconFeatureCard";
-import SectionArea from "../sectionElements/SectionArea";
-import SectionHeader from "../sectionElements/SectionHeader";
-import SectionWrapper from "../sectionElements/SectionWrapper";
-import MotionDivDownToUp from "../animation/MotionDivDownToUp";
+import 'primeicons/primeicons.css'
+import content from '../../content/content'
+// import ServicesModal from "./ServicesModal";
+import 'primereact/resources/primereact.min.css'
+import IconFeatureCard from '../cards/IconFeatureCard'
+import SectionArea from '../sectionElements/SectionArea'
+import SectionHeader from '../sectionElements/SectionHeader'
+import SectionWrapper from '../sectionElements/SectionWrapper'
+import MotionDivDownToUp from '../animation/MotionDivDownToUp'
 
 export default function FeaturesModalWithCards({ colorMode }) {
   // Classes de tema
   const bgClasses = {
-    dark: "bg-bgSectionOpacityDark",
-    light: "bg-bgSectionOpacityLight",
-    default: "squares",
-  };
+    dark: 'bg-bgSectionOpacityDark',
+    light: 'bg-bgSectionOpacityLight',
+    default: 'squares',
+  }
   const textClasses = {
-    dark: "text-white",
-    light: "text-black",
-    default: "bg-bgSectionDark",
-  };
-  const bgClass = bgClasses[colorMode] || bgClasses.default;
-  const textClass = textClasses[colorMode] || textClasses.default;
+    dark: 'text-white',
+    light: 'text-black',
+    default: 'bg-bgSectionDark',
+  }
+  const bgClass = bgClasses[colorMode] || bgClasses.default
+  const textClass = textClasses[colorMode] || textClasses.default
   return (
     <SectionArea id="service" className={`${bgClass}`}>
       <SectionHeader
@@ -86,5 +86,5 @@ export default function FeaturesModalWithCards({ colorMode }) {
         </div>
       </SectionWrapper>
     </SectionArea>
-  );
+  )
 }
