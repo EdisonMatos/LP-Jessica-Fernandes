@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import "../../styles/shapeDivs.css";
+// import "../../styles/shapeDivs.css";
 
 const shapes = {
   shape1: "custom-shape-divider-top-1727467397",

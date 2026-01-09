@@ -1,5 +1,5 @@
-import PropTypes from "prop-types";
-import { Children } from "react";
+import PropTypes from 'prop-types'
+import { Children } from 'react'
 
 export default function SectionArea({
   children,
@@ -17,17 +17,16 @@ export default function SectionArea({
     paddingtop: PropTypes.bool,
     paddingbot: PropTypes.bool,
     paddingTopAndBottom: PropTypes.bool,
-  };
-
-  if (paddingTopAndBottom === false) {
-    paddingtop = paddingTopAndBottom;
-    paddingbot = paddingTopAndBottom;
   }
 
-  const childrenArray = Children.toArray(children);
-  const paddingTopp = paddingtop ? "pt-[64px] desktop1:pt-[96px]" : "";
-  const paddingBottom = paddingbot ? "pb-[64px] desktop1:pb-[96px]" : "";
+  if (paddingTopAndBottom === false) {
+    paddingtop = paddingTopAndBottom
+    paddingbot = paddingTopAndBottom
+  }
 
+  const childrenArray = Children.toArray(children)
+  const paddingTopp = paddingtop ? 'pt-[64px] desktop1:pt-[96px]' : ''
+  const paddingBottom = paddingbot ? 'pb-[64px] desktop1:pb-[96px]' : ''
 
   return (
     <div
@@ -36,5 +35,5 @@ export default function SectionArea({
     >
       {childrenArray}
     </div>
-  );
+  )
 }

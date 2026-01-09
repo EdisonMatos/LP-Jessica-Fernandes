@@ -4,7 +4,7 @@ import Button from "../../interactives/Button";
 import { FaWhatsapp } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import { useState, useEffect } from "react";
-import "../../../styles/shapeDivs.css";
+// import "../../../styles/shapeDivs.css";
 import SectionArea from "../SectionArea";
 import SectionWrapper from "../SectionWrapper";
 

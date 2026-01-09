@@ -1,5 +1,4 @@
 import { lazy, Suspense } from 'react'
-import '../styles/shapeDivs.css'
 
 // CRÍTICO — render imediato (LCP)
 import Navbar from '../components/sections/NavbarSocial'
