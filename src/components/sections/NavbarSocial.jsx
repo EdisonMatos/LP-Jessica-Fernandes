@@ -111,8 +111,9 @@ export default function NavbarSocial({ colorMode }) {
             href="#"
           >
             <img
-              src={content.texts.navbar.logo.img}
+              src="/logo.webp"
               alt={content.texts.navbar.logo.alt}
+              fetchpriority="high"
               width={385}
               height={154}
               className={`${
