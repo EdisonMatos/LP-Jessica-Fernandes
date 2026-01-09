@@ -48,7 +48,7 @@ export default function Influencer({ appDownloadButtons }) {
                       <Button
                         aria-label={content.texts.hero.ctaButtonAriaLabel}
                         label={content.texts.hero.ctaButtonText}
-                        animation
+                        animation={false}
                         className="w-[100%]"
                         icon={<FaWhatsapp size={24} />}
                       />
