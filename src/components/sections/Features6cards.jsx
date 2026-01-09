@@ -25,7 +25,7 @@ export default function Features6cards({ modal, colorMode }) {
 
   return (
     <>
-      <SectionArea id="service" className={`${bgClass}`}>
+      <SectionArea id="services" className={`${bgClass}`}>
         <SectionHeader
           className={`text-center bg-transparent ${textClass}`}
           miniTitle={content.texts.features.miniTag}

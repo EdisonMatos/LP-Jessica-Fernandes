@@ -42,6 +42,8 @@ export default function ListGroupSocial({ colorMode = 'default' }) {
       ? '[text-shadow:_2px_2px_3px_rgb(0_0_0_/_0%)]'
       : ''
 
+  const ids = content.texts.navbar.menuId
+
   return (
     <ul
       className={`h-14 hidden desktop1:flex my-auto items-center justify-end tablet1:items-center desktop1:gap-8 desktop2:gap-8 w-auto font-normal text-paragraph3 font-secondFont ${getTextColor()}`}
@@ -49,8 +51,8 @@ export default function ListGroupSocial({ colorMode = 'default' }) {
       {['home', 'service', 'about', 'faq'].map((section, index) => (
         <li key={section} className="transition group h-[24px]">
           <Link
-            aria-label="Links de navegação"
-            to={section}
+            aria-label={`Link para ${section}`}
+            to={ids[index]}
             className="relative font-semibold cursor-pointer"
             spy={true}
             smooth={true}
