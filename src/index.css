@@ -33,15 +33,6 @@
   src: url('/fonts/Merriweather/Merriweather_24pt-Regular.ttf') format('woff2');
 }
 
-/* 400 */
-@font-face {
-  font-family: 'Merriweather';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url('/fonts/Merriweather/Merriweather-Regular-400.woff2') format('woff2');
-}
-
 /* 700 */
 @font-face {
   font-family: 'Merriweather';
@@ -61,7 +52,7 @@
   font-style: italic;
   font-weight: 300;
   font-display: swap;
-  src: url('/fonts/Merriweather/Merriweather-Italic-300.woff2') format('woff2');
+  src: url('/fonts/Merriweather/Merriweather-Italic-300.ttf') format('woff2');
 }
 
 /* 400 */
@@ -70,7 +61,7 @@
   font-style: italic;
   font-weight: 400;
   font-display: swap;
-  src: url('/fonts/Merriweather/Merriweather-Italic-400.woff2') format('woff2');
+  src: url('/fonts/Merriweather/Merriweather-Italic-400.ttf') format('woff2');
 }
 
 /* 700 */
@@ -79,7 +70,7 @@
   font-style: italic;
   font-weight: 700;
   font-display: swap;
-  src: url('/fonts/Merriweather/Merriweather-Italic-700.woff2') format('woff2');
+  src: url('/fonts/Merriweather/Merriweather-Italic-700.ttf') format('woff2');
 }
 
 /* 900 */
@@ -88,15 +79,10 @@
   font-style: italic;
   font-weight: 900;
   font-display: swap;
-  src: url('/fonts/Merriweather/Merriweather-Italic-900.woff2') format('woff2');
+  src: url('/fonts/Merriweather/Merriweather-Italic-900.ttf') format('woff2');
 }
 
-@font-face {
-  font-family: 'Keep Calm';
-  src: url('./assets/fonts/KeepCalm-Medium.ttf') format('opentype');
-  font-style: normal;
-  font-display: swap;
-}
+
 
 @keyframes fadeIn {
   from {
