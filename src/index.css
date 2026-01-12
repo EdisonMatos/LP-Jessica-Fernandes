@@ -56,35 +56,6 @@
     format('woff2');
 }
 
-/* 400 */
-@font-face {
-  font-family: 'Merriweather';
-  font-style: italic;
-  font-weight: 400;
-  font-display: swap;
-  src: url('/fonts/Merriweather/Merriweather_24pt-Italic.ttf') format('woff2');
-}
-
-/* 700 */
-@font-face {
-  font-family: 'Merriweather';
-  font-style: italic;
-  font-weight: 700;
-  font-display: swap;
-  src: url('/fonts/Merriweather/Merriweather_24pt-BoldItalic.ttf')
-    format('woff2');
-}
-
-/* 900 */
-@font-face {
-  font-family: 'Merriweather';
-  font-style: italic;
-  font-weight: 900;
-  font-display: swap;
-  src: url('/fonts/Merriweather/Merriweather_24pt-BlackItalic.ttf')
-    format('woff2');
-}
-
 @keyframes fadeIn {
   from {
     opacity: 0;
